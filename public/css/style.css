@@ -1,0 +1,78 @@
+/* Login Page */
+
+:root {
+    --getColor: #27ae60;
+    --postColor: #16a085;
+}
+
+#formContainer {
+    max-width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+}
+
+form {
+    margin: 0 1rem;
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 
+    0 0  0 2px rgb(255,255,255),
+    0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+input {
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    outline: none;
+    background-color: #F1F1F1;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+button {
+    align-self: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    transition: all 0.25s;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#getForm button {
+    border: 1px solid var(--getColor);
+    color: var(--getColor);
+}
+
+#postForm button {
+    border: 1px solid var(--postColor);
+    color: var(--postColor);
+}
+
+#getForm button:hover {
+    background-color: var(--getColor);
+    color: #fff;
+}
+
+#postForm button:hover {
+    background-color: var(--postColor);
+    color: #fff;
+}
+
+/* Thank you page */
+#thankYou {
+    padding: 1rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+li {
+    padding-left: 1rem;
+}
+
+li::marker {
+    content: "\2713";
+}
